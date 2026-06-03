@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy & Trust Center — Nenek CFX Bot</title>
+    <style>
+        :root {
+            --bg-color: #2B2D31; /* Discord Dark Mode Background */
+            --card-bg: #1E1F22;
+            --accent-green: #00ff88;
+            --accent-orange: #ffaa00;
+            --text-main: #DBDEE1;
+            --text-muted: #949BA4;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: var(--accent-green);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: var(--accent-orange);
+            border-bottom: 2px solid #313338;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .highlight {
+            background-color: rgba(0, 255, 136, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+        .warning-box {
+            background-color: rgba(255, 170, 0, 0.1);
+            border-left: 4px solid var(--accent-orange);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🛡️ Privacy & Trust Center</h1>
+    <p class="subtitle">Transparency is our priority. This bot is designed to be lightning-fast, not to harvest your data.</p>
+
+    <div class="warning-box">
+        <strong>TL;DR:</strong> We do not sell your data. We do not share it. We only store the bare minimum required to make the bot function smoothly.
+    </div>
+
+    <h2>📡 1. What Data Do We Collect?</h2>
+    <p>To provide a fast and accurate bot experience, we only store essential data:</p>
+    <ul>
+        <li><strong>Discord User IDs & Tags:</strong> Used when you submit a server request (<span class="highlight">?reqserver</span>) so we can notify you via DM when your request is approved or rejected.</li>
+        <li><strong>Discord Guild/Server IDs & Channel IDs:</strong> Used to remember the active channel where the bot is used, ensuring developer announcements reach the right place.</li>
+        <li><strong>Public FiveM Data:</strong> Server names, CFX codes, and player counts fetched directly from the official CFX.re public API.</li>
+    </ul>
+
+    <h2>💾 2. How Do We Store Your Data?</h2>
+    <p>Data security is our top priority. Unlike other bots that rely on vulnerable cloud databases, <span class="highlight">Nenek CFX uses a local SQLite database (WAL mode)</span> hosted directly on our private infrastructure. No third-party cloud services are involved.</p>
+
+    <h2>🚫 3. Data Sharing Policy</h2>
+    <p>We hate spam and data abuse just as much as you do.</p>
+    <ul>
+        <li>We <strong>NEVER</strong> sell, rent, or trade user data.</li>
+        <li>We <strong>NEVER</strong> share your Discord IDs with external third-party servers.</li>
+        <li>Data is used purely for bot functionality and operational purposes.</li>
+    </ul>
+
+    <h2>🗑️ 4. Your Rights & Data Deletion</h2>
+    <p>You have full control over your data. If you wish to have your data removed from our database (e.g., request history), simply contact the Developer via our Discord Support Server. We will process the deletion within 24 hours.</p>
+
+    <h2>🔄 5. Changes to This Policy</h2>
+    <p>If we update this policy in the future, we will announce it via the bot's broadcast feature (<span class="highlight">?ann</span>) and update the date below.</p>
+
+    <footer>
+        <p><strong>Last Updated:</strong> May 24, 2024</p>
+        <p>Design By tjayyy • Nenek CFX Player Finder</p>
+    </footer>
+</div>
+
+</body>
+</html>
